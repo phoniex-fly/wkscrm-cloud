@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.zkr</groupId>
+        <artifactId>wkscrm</artifactId>
+        <version>3.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>service-system</module>
+        <module>service-file</module>
+        <module>service-gen</module>
+        <module>service-job</module>
+        <module>service-customer-personas</module>
+        <module>service-clue</module>
+        <module>service-customer</module>
+        <module>service-data-collection</module>
+        <module>service-data-parser</module>
+        <module>service-data-push</module>
+        <module>service-data-strategy</module>
+        <module>service-report</module>
+        <module>service-customer-lable</module>
+    </modules>
+
+    <artifactId>wkscrm-service</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        wkscrm-service业务模块
+    </description>
+
+</project>

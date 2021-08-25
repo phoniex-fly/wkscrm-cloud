@@ -1,0 +1,121 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: 
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+      routes:
+        # 认证中心
+        - id: server-auth
+          uri: lb://server-auth
+          predicates:
+            - Path=/auth/**
+          filters:
+            # 验证码处理
+            - CacheRequestFilter
+            - ValidateCodeFilter
+            - StripPrefix=1
+        # 代码生成
+        - id: service-gen
+          uri: lb://service-gen
+          predicates:
+            - Path=/code/**
+          filters:
+            - StripPrefix=1
+        # 定时任务
+        - id: service-job
+          uri: lb://service-job
+          predicates:
+            - Path=/schedule/**
+          filters:
+            - StripPrefix=1
+        # 系统模块
+        - id: service-system
+          uri: lb://service-system
+          predicates:
+            - Path=/system/**
+          filters:
+            - StripPrefix=1
+        # 文件服务
+        - id: service-file
+          uri: lb://service-file
+          predicates:
+            - Path=/file/**
+          filters:
+            - StripPrefix=1
+        # 线索服务
+        - id: service-clue
+          uri: lb://service-clue
+          predicates:
+            - Path=/clue/**
+          filters:
+            - StripPrefix=1
+        # 客户服务
+        - id: service-customer
+          uri: lb://service-customer
+          predicates:
+            - Path=/customer/**
+          filters:
+            - StripPrefix=1
+        # 画像服务
+        - id: service-customer-personas
+          uri: lb://service-customer-personas
+          predicates:
+            - Path=/personas/**
+          filters:
+            - StripPrefix=1
+        # 数据采集服务
+        - id: service-data-collection
+          uri: lb://service-data-collection
+          predicates:
+            - Path=/collection/**
+          filters:
+            - StripPrefix=1
+        # 数据解析服务
+        - id: service-data-parser
+          uri: lb://service-data-parser
+          predicates:
+            - Path=/parser/**
+          filters:
+            - StripPrefix=1
+        # 数据下发服务
+        - id: service-data-push
+          uri: lb://service-data-push
+          predicates:
+            - Path=/push/**
+          filters:
+            - StripPrefix=1
+        # 报表服务
+        - id: service-report
+          uri: lb://service-report
+          predicates:
+            - Path=/report/**
+          filters:
+            - StripPrefix=1
+        # 标签服务
+        - id: service-customer-lable
+          uri: lb://service-customer-lable
+          predicates:
+            - Path=/lable/**
+          filters:
+            - StripPrefix=1
+        # 下发策略服务
+        - id: service-data-strategy
+          uri: lb://service-data-strategy
+          predicates:
+            - Path=/strategy/**
+          filters:
+            - StripPrefix=1
+
+# 不校验白名单
+ignore:
+  whites:
+    - /auth/logout
+    - /auth/login
+    - /*/v2/api-docs
+    - /csrf

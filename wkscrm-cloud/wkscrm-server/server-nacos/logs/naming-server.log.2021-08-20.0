@@ -1,0 +1,14 @@
+2021-08-20 09:30:35,561 INFO Client connection 1629276631964_127.0.0.1_53800 disconnect, remove instances and subscribers
+
+2021-08-20 09:30:35,562 INFO Client connection 1629281501464_127.0.0.1_59971 disconnect, remove instances and subscribers
+
+2021-08-20 09:30:35,562 INFO Client connection 1629276637055_127.0.0.1_53811 disconnect, remove instances and subscribers
+
+2021-08-20 09:30:35,564 INFO Client connection 1629281510300_127.0.0.1_59988 disconnect, remove instances and subscribers
+
+2021-08-20 09:30:35,565 INFO Client connection 1629281508970_127.0.0.1_59985 disconnect, remove instances and subscribers
+
+2021-08-20 09:32:03,898 WARN namespace : public, [DEFAULT_GROUP@@server-auth] services are automatically cleaned
+
+2021-08-20 09:32:03,898 WARN namespace : public, [DEFAULT_GROUP@@server-gateway] services are automatically cleaned
+

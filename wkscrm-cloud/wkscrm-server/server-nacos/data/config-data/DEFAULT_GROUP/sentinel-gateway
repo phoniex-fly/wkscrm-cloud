@@ -1,0 +1,106 @@
+[
+    {
+        "resource": "wkscrm-auth",
+        "count": 500,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-system",
+        "count": 1000,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-gen",
+        "count": 200,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-job",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-clue",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-customer",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-customer-personas",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-data-collection",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-data-parser",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-data-push",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+    {
+        "resource": "wkscrm-data-strategy",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-report",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "wkscrm-customer-lable",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    }
+]

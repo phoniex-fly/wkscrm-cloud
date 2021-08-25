@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.wkscrm.system.api.factory.UserFeignFallbackFactory,\
+  com.wkscrm.system.api.factory.LogFeignFallbackFactory, \
+  com.wkscrm.system.api.factory.FileFeignFallbackFactory

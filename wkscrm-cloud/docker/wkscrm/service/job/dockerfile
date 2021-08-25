@@ -1,0 +1,15 @@
+# 基础镜像
+FROM  openjdk:8-jre
+# author
+MAINTAINER wkscrm
+
+# 挂载目录
+VOLUME /home/wkscrm
+# 创建目录
+RUN mkdir -p /home/wkscrm
+# 指定路径
+WORKDIR /home/wkscrm
+# 复制jar文件到路径
+COPY ./jar/wkscrm-modules-job.jar /home/wkscrm/wkscrm-modules-job.jar
+# 启动定时任务服务
+ENTRYPOINT ["java","-jar","wkscrm-modules-job.jar"]

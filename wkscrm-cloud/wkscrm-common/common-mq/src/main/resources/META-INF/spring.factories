@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.wkscrm.common.mq.configure.RedisConfig,\
+  com.wkscrm.common.mq.service.RedisService
+
+

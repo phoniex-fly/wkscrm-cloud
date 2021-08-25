@@ -1,0 +1,10 @@
+# spring
+spring: 
+  security:
+    user:
+      name: wkscrm
+      password: wkscrm
+  boot:
+    admin:
+      ui:
+        title: 唯客服务状态监控

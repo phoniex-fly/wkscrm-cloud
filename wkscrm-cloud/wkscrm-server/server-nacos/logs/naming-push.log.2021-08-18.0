@@ -1,0 +1,55 @@
+2021-08-18 16:29:29,390 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='server-auth', ephemeral=true, revision=1}
+
+2021-08-18 16:29:30,883 INFO [PUSH-SUCC] 1102ms, all delay time 1629ms, SLA 1492ms, Service{namespace='public', group='DEFAULT_GROUP', name='server-auth', ephemeral=true, revision=1}, DataSize=1, target=10.0.162.115
+
+2021-08-18 16:50:38,628 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='server-auth', ephemeral=true, revision=3}
+
+2021-08-18 16:50:39,108 INFO [PUSH-SUCC] 32ms, all delay time 544ms, SLA 480ms, Service{namespace='public', group='DEFAULT_GROUP', name='server-auth', ephemeral=true, revision=3}, DataSize=1, target=10.0.162.115
+
+2021-08-18 16:58:08,591 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=1}
+
+2021-08-18 16:58:09,100 INFO [PUSH-SUCC] 30ms, all delay time 582ms, SLA 509ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=1}, DataSize=1, target=10.0.162.115
+
+2021-08-18 18:11:14,530 INFO [PUSH-SUCC] 29ms, all delay time 627ms for subscriber 10.0.162.115, Service{namespace='public', group='DEFAULT_GROUP', name='server-auth', ephemeral=true, revision=3}, DataSize=1
+
+2021-08-18 18:11:15,390 INFO [PUSH-SUCC] 6ms, all delay time 615ms for subscriber 10.0.162.115, Service{namespace='public', group='DEFAULT_GROUP', name='server-gateway', ephemeral=true, revision=0}, DataSize=0
+
+2021-08-18 18:11:19,510 ERROR [PUSH-FAIL] 5009ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=1}, reason=Timeout After 5000 milliseconds,requestId =4, target=10.0.162.115
+
+2021-08-18 18:11:19,518 ERROR Reason detail: 
+
+java.util.concurrent.TimeoutException: Timeout After 5000 milliseconds,requestId =4
+	at com.alibaba.nacos.api.remote.DefaultRequestFuture$TimeoutHandler.run(DefaultRequestFuture.java:194)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-08-18 18:11:50,259 INFO [PUSH-SUCC] 17ms, all delay time 559ms for subscriber 10.0.162.115, Service{namespace='public', group='DEFAULT_GROUP', name='server-auth', ephemeral=true, revision=3}, DataSize=1
+
+2021-08-18 18:11:50,263 INFO [PUSH-SUCC] 21ms, all delay time 562ms for subscriber 10.0.162.115, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=1}, DataSize=1
+
+2021-08-18 18:11:51,132 INFO [PUSH-SUCC] 5ms, all delay time 600ms for subscriber 10.0.162.115, Service{namespace='public', group='DEFAULT_GROUP', name='server-gateway', ephemeral=true, revision=0}, DataSize=0
+
+2021-08-18 18:11:52,801 INFO [PUSH-SUCC] 11ms, all delay time 527ms, SLA 527ms, Service{namespace='public', group='DEFAULT_GROUP', name='server-gateway', ephemeral=true, revision=1}, DataSize=1, target=10.0.162.115
+
+2021-08-18 18:12:47,319 INFO [PUSH-SUCC] 7ms, all delay time 514ms for subscriber 10.0.162.115, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=1}, DataSize=1
+
+2021-08-18 18:20:28,250 INFO [PUSH-SUCC] 12ms, all delay time 561ms, SLA 561ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=2}, DataSize=0, target=10.0.162.115
+
+2021-08-18 18:20:28,250 INFO [PUSH-SUCC] 13ms, all delay time 561ms, SLA 561ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=2}, DataSize=0, target=10.0.162.115
+
+2021-08-18 18:20:51,335 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=3}
+
+2021-08-18 18:20:51,853 INFO [PUSH-SUCC] 11ms, all delay time 587ms, SLA 518ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=3}, DataSize=1, target=10.0.162.115
+
+2021-08-18 18:20:51,853 INFO [PUSH-SUCC] 10ms, all delay time 587ms, SLA 518ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=3}, DataSize=1, target=10.0.162.115
+
+2021-08-18 18:20:51,869 INFO [PUSH-SUCC] 27ms, all delay time 603ms, SLA 534ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=3}, DataSize=1, target=10.0.162.115
+
+2021-08-18 18:21:52,697 INFO [PUSH-SUCC] 5ms, all delay time 603ms, SLA 603ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=4}, DataSize=0, target=10.0.162.115
+
+2021-08-18 18:21:52,699 INFO [PUSH-SUCC] 8ms, all delay time 605ms, SLA 605ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-system', ephemeral=true, revision=4}, DataSize=0, target=10.0.162.115
+
